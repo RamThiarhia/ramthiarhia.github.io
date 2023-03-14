@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Michroma&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Michroma', sans-serif;
+    gap: 2rem;
+    background-image: linear-gradient(-55deg,rgb(77,17,189),violet,purple,red,blue);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    min-height: 100vh;
+
+    
+}
+
+
+
+.form-register{
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color:  rgb(255,255,255, 0.8);
+    width: min(100%, 450px);
+    margin: 5rem auto;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    box-shadow: hwb(291 4% 91% / 0.582) 0px 8px 24px;
+    
+}
+
+input{
+    font-family: inherit;
+    outline: transparent;
+    border: 2px solid #808080;
+    background: #ebe9e9;
+}
+
+.inputbox{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-right: .3rem;
+}
+
+.inputbox input{
+    width: 100%;
+    padding: 15px 15px 7px;
+    font-size: 10px;
+    margin-right: 5rem;
+    border-radius: .5rem;
+    transition: 0.3s ease;
+
+
+}
+
+.inputbox label{
+    font-size: 10px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: #808080;
+    transition: 0.3s ease;
+
+}
+
+input::placeholder{
+    color: transparent;
+}
+
+.header-title{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 1.3rem;
+    padding-bottom: .4rem;
+}
+
+.container{
+    position: relative;
+    right: 4.8rem;
+}
+
+.container input{
+    position: absolute;
+    top: 3px;
+    left: 8.8rem;
+    width: 14px;
+    height: 14px;
+    accent-color: purple;
+    
+}
+
+.term-policy label{
+    font-size: 12px;
+}
+
+.link-login{
+    position: relative;
+    right: 2.4rem;
+    bottom: 1.2rem;
+
+}
+
+.link-login span, a{
+    font-size: 12px;
+}
+.link-login a{
+    color: purple;
+}
+
+.button button{
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 550;
+    letter-spacing: 2px;
+    padding: .5rem 3rem;
+    border: .5px solid;
+    border-radius: 2rem;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.header-title h1{
+    font-family: 'DM Serif Display ', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+/*Pseudo class*/
+
+.inputbox input:focus{
+    border: 2px solid purple;
+    
+}
+
+.inputbox input:focus ~ label{
+    top: 6px;
+    font-size: 8px;
+    color: purple;
+}
+
+.inputbox input:not(:placeholder-shown) ~ label{
+    top: 6px;
+    font-size: 8px;
+}
+
+.button button:hover{
+    border-color: purple;
+    background-color: purple;
+    transition: 0.3s ease;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
